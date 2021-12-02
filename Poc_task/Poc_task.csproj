@@ -139,6 +139,7 @@
     <Content Include="Views\Default\CreateRecord.cshtml" />
     <Content Include="Views\Default\DeleteRecord.cshtml" />
     <Content Include="Views\Default\Delete.cshtml" />
+    <Content Include="Views\Default\InsertRecord.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

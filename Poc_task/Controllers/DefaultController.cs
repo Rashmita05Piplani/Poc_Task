@@ -85,29 +85,47 @@ namespace Poc_task.Controllers
         [HttpGet]
         public ActionResult DeleteRecord(string empcode)
         {
-          //  EmployeeDBContext EmpRepo = new EmployeeDBContext();
-           // var row = EmpRepo.GetEmployees().Find(model => model.EmpCode == empcode);
+              //EmployeeDBContext EmpRepo = new EmployeeDBContext();
+            // var row = EmpRepo.GetEmployees().Find(model => model.EmpCode == empcode);
+            try
+            {
+                EmployeeDBContext EmpRepo = new EmployeeDBContext();
+                if(EmpRepo.DeleteEmployee(empcode))
+                {
+                    ViewBag.AlertMsg = "Employees Details Deleted Successfully";
+                }
+                return RedirectToAction("ViewRecords");
+            }
+            catch
+            {
+                return View();
+            }
            return RedirectToAction("");
             
         }
         [HttpPost]
-        public ActionResult DeleteRecord(String empcode,Employee emp)
-        {
-            EmployeeDBContext EmpRepo = new EmployeeDBContext();
-            bool check = EmpRepo.DeleteEmployee(empcode);
-            if(check==true)
-            {
-                TempData["DeleteMessage"] = "Data Has Been Deleted Successfully";
-                ModelState.Clear();
-                return RedirectToAction("CreateRecord");
+        //public ActionResult DeleteRecord(String empcode,Employee emp)
+        //{
+        //    EmployeeDBContext EmpRepo = new EmployeeDBContext();
+        //    bool check = EmpRepo.DeleteEmployee(empcode);
+        //    if(check==true)
+        //    {
+        //        TempData["DeleteMessage"] = "Data Has Been Deleted Successfully";
+        //        ModelState.Clear();
+        //        return RedirectToAction("CreateRecord");
 
-            }
-            return View();
+        //    }
+        //    return View();
 
 
 
-        }
+        //}
         public ActionResult Delete()
+        {
+            return View();
+        }
+        // from start
+        public ActionResult InsertRecord()
         {
             return View();
         }
