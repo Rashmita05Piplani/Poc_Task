@@ -1,0 +1,105 @@
+﻿@model Poc_task.Models.Employee
+@{
+    ViewBag.Title = "Index";
+}
+
+@if()
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <style>
+        body {
+            background-color: lightgrey;
+            color: black;
+        }
+
+        label {
+            color: blue;
+            font-size: large;
+        }
+
+        a {
+            font-size: large;
+        }
+
+        .head_container {
+            display: flex;
+            justify-content: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .head_container_link {
+            display: flex;
+            justify-content: space-between;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .head_container_form {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            font-size: large;
+        }
+
+        .form_button {
+            display: flex;
+            justify-content: space-around;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="head_container_form">
+        @using (Html.BeginForm("PostUsingBinding", "Default", FormMethod.Post))
+        {
+            @Html.LabelFor(model => model.EmpCode)
+            @Html.EditorFor(model => model.EmpCode)
+            @Html.ValidationMessageFor(model => model.EmpCode)
+            <br />
+            <br />
+
+            @Html.LabelFor(model => model.FirstName)
+            @Html.EditorFor(model => model.FirstName)
+            @Html.ValidationMessageFor(model => model.FirstName)
+
+            <br />
+            @Html.LabelFor(model => model.LastName)
+            @Html.EditorFor(model => model.LastName)
+            @Html.ValidationMessageFor(model => model.LastName)
+
+            <br />
+            @Html.LabelFor(model => model.Age)
+            @Html.EditorFor(model => model.Age)
+            @Html.ValidationMessageFor(model => model.Age)
+
+            <br />
+            @Html.LabelFor(model => model.Sex)
+            @Html.EditorFor(model => model.Sex)
+            @Html.ValidationMessageFor(model => model.EmpCode)
+
+            <br />
+            @Html.LabelFor(model => model.Email)
+            @Html.EditorFor(model => model.Email)
+            @Html.ValidationMessageFor(model => model.Email)
+
+            <br />
+            <input type="submit" value="click me" />
+
+
+
+
+
+        }
+
+
+        <br />
+        <br />
+
+       
+
+</body>
+
