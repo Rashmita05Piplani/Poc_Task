@@ -70,10 +70,8 @@ C:\Users\Daffolap-939\Desktop\Poc_task\Poc_task\obj\Debug\Poc_task.pdb
 C:\Users\Daffolap-939\Desktop\Poc_task\employee_crud_app\Poc_task\bin\Poc_task.dll.config
 C:\Users\Daffolap-939\Desktop\Poc_task\employee_crud_app\Poc_task\bin\Poc_task.dll
 C:\Users\Daffolap-939\Desktop\Poc_task\employee_crud_app\Poc_task\bin\Poc_task.pdb
-C:\Users\Daffolap-939\Desktop\Poc_task\employee_crud_app\Poc_task\bin\roslyn\csc.exe
 C:\Users\Daffolap-939\Desktop\Poc_task\employee_crud_app\Poc_task\bin\roslyn\csc.exe.config
 C:\Users\Daffolap-939\Desktop\Poc_task\employee_crud_app\Poc_task\bin\roslyn\csc.rsp
-C:\Users\Daffolap-939\Desktop\Poc_task\employee_crud_app\Poc_task\bin\roslyn\csi.exe
 C:\Users\Daffolap-939\Desktop\Poc_task\employee_crud_app\Poc_task\bin\roslyn\csi.exe.config
 C:\Users\Daffolap-939\Desktop\Poc_task\employee_crud_app\Poc_task\bin\roslyn\csi.rsp
 C:\Users\Daffolap-939\Desktop\Poc_task\employee_crud_app\Poc_task\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -111,10 +109,8 @@ C:\Users\Daffolap-939\Desktop\Poc_task\employee_crud_app\Poc_task\bin\roslyn\Sys
 C:\Users\Daffolap-939\Desktop\Poc_task\employee_crud_app\Poc_task\bin\roslyn\System.Xml.XmlDocument.dll
 C:\Users\Daffolap-939\Desktop\Poc_task\employee_crud_app\Poc_task\bin\roslyn\System.Xml.XPath.dll
 C:\Users\Daffolap-939\Desktop\Poc_task\employee_crud_app\Poc_task\bin\roslyn\System.Xml.XPath.XDocument.dll
-C:\Users\Daffolap-939\Desktop\Poc_task\employee_crud_app\Poc_task\bin\roslyn\vbc.exe
 C:\Users\Daffolap-939\Desktop\Poc_task\employee_crud_app\Poc_task\bin\roslyn\vbc.exe.config
 C:\Users\Daffolap-939\Desktop\Poc_task\employee_crud_app\Poc_task\bin\roslyn\vbc.rsp
-C:\Users\Daffolap-939\Desktop\Poc_task\employee_crud_app\Poc_task\bin\roslyn\VBCSCompiler.exe
 C:\Users\Daffolap-939\Desktop\Poc_task\employee_crud_app\Poc_task\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\Daffolap-939\Desktop\Poc_task\employee_crud_app\Poc_task\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\Daffolap-939\Desktop\Poc_task\employee_crud_app\Poc_task\bin\Microsoft.Web.Infrastructure.dll

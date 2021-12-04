@@ -19,7 +19,8 @@ namespace Poc_task.Models
       [Required ]
       [RegularExpression(@"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}", ErrorMessage = "Please enter correct email")]  
 
-     public string Email { get; set; }
-     public string Sex { get; set; }
+      public string Email { get; set; }
+      public string Sex { get; set; }
+      public HttpPostedFileBase File { get; set; }
     }
 }

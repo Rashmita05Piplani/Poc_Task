@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Poc_task.Models;
+using System.IO;
 
 namespace Poc_task.Controllers
 {
@@ -56,12 +57,30 @@ namespace Poc_task.Controllers
 
         }
         public ActionResult CreateRecord()
-        {
+        { 
+
             return View();
         }
         [HttpPost]
-        public ActionResult CreateRecord(Employee emp)
+        public ActionResult CreateRecord(Employee emp,HttpPostedFileBase UploadFile)
         {
+            try
+            {   if ( UploadFile.ContentLength>0)
+                {
+                    string FileName = Path.GetFileName(UploadFile.FileName);
+
+                    string path = Server.MapPath("~/App_Start/File Uploads");
+                    
+                    string fullPath = Path.Combine(path, FileName);
+                    UploadFile.SaveAs(fullPath);
+                }
+            }
+            catch
+            {
+                ViewBag.Message = "File upload failed";
+                return View();
+            }
+
             try
             {
                 if (ModelState.IsValid)
@@ -74,7 +93,7 @@ namespace Poc_task.Controllers
                     }
                 }
 
-                return View();
+                return View(ViewBag.Message);
             }
             catch
             {
@@ -129,6 +148,10 @@ namespace Poc_task.Controllers
         {
             return View();
         }
+        //public ActionResult FileUpload()
+        //{
+        //    ret
+        //}
 
     }
 }
